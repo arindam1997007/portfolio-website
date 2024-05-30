@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
 	title: "Arindam Chowdhury",
 	description:
-		"Arindam Chowdhury is a frontend developer with 3.5 years of experience in React | Resume Portfolio website",
+		"Arindam Chowdhury is a frontend developer with 4+ years of experience in React | Resume Portfolio website",
 }
 
 export default function RootLayout({
