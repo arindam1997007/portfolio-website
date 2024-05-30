@@ -19,7 +19,7 @@ export default async function Blogs() {
 	const blogResponse = await blogData.json()
 
 	return (
-		<section className='my-20 mt-28 scroll-m-8' id={SECTION_IDS.blog.value}>
+		<section className='my-12 scroll-m-8 lg:my-20' id={SECTION_IDS.blog.value}>
 			<OrangeHeader>
 				<h2 className='mb-10'>Blogs</h2>
 			</OrangeHeader>

@@ -40,7 +40,7 @@ export const ContactMe = () => {
 			<OrangeHeader>
 				<h2>Contact Me</h2>
 			</OrangeHeader>
-			<div className="lg:bg-[url('/images/old_laptop_background.png')]  bg-no-repeat bg-center flex gap-4  text-secondary flex-col items-center lg:mt-10 lg:py-10 lg:flex-row">
+			<div className="lg:bg-[url('/images/old_laptop_background.png')]  bg-no-repeat bg-center flex gap-4  text-secondary flex-col items-center mt-10 lg:py-10 lg:flex-row">
 				<div>
 					<p>Have a question or need assistance? Do reach out</p>
 					<ul className='font-semibold'>
