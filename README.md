@@ -3,7 +3,7 @@ Hi, welcome to my protfolio website, built using NextJS 👋
 ## Getting Started
 
 - [x] Duplicate .example.env file and rename it to .env.local
-Setup a free account with [Resend](https://resend.com/), get an API key and paste it in .env.local 
+  Setup a free account with [Resend](https://resend.com/), get an API key and paste it in .env.local 
 > RESEND_API_KEY=your_api_key
 
 - [x] Then, run the development server:
