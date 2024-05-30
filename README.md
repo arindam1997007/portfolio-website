@@ -2,7 +2,11 @@ Hi, welcome to my protfolio website, built using NextJS 👋
 
 ## Getting Started
 
-First, run the development server:
+- [x] Duplicate .example.env file and rename it to .env.local
+Setup a free account with [Resend](https://resend.com/), get an API key and paste it in .env.local 
+> RESEND_API_KEY=your_api_key
+
+- [x] Then, run the development server:
 
 ```bash
 npm run dev
@@ -13,8 +17,6 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 ## Project Documentation
 
