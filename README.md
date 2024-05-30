@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Hi, welcome to my protfolio website, built using NextJS
 
 ## Getting Started
 
@@ -16,11 +16,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 ## Project Documentation
 
-### CSS class names starts with "css-"
++ Custom CSS classes starts with "css-"
++ Tailwind is used for general styling
++ Animation is done using framer-motion
++ Email is send using resend, and Email Template is generated using @react-email
 
 ## Deploy on Vercel
 
