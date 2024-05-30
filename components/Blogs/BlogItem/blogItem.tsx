@@ -10,7 +10,7 @@ export const BlogItem = ({ blog }: { blog: BlogInterface }) => {
 				width='1000'
 				height='500'
 				alt='Blog Image'
-				className='rounded-md'
+				className='rounded-md opacity-80'
 			/>
 			<h3 className='text-xl font-semibold my-3 lg:text-3xl'>{blog.title}</h3>
 			<p className='text-secondary'>{blog.description}</p>

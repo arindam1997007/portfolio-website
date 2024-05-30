@@ -42,7 +42,15 @@ export const ContactMe = () => {
 			</OrangeHeader>
 			<div className="lg:bg-[url('/images/old_laptop_background.png')]  bg-no-repeat bg-center flex gap-4  text-secondary flex-col items-center mt-10 lg:py-10 lg:flex-row">
 				<div>
-					<p>Have a question or need assistance? Do reach out</p>
+					<p>
+						Have a question or need assistance? <br />
+						<Link
+							href='mailto:arindam.webdeveloper@gmail.com'
+							className='text-accent underline cursor-pointer'
+						>
+							Do reach out
+						</Link>
+					</p>
 					<ul className='font-semibold'>
 						<li className='flex items-center gap-2 py-2'>
 							<CheckCircledIcon

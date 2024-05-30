@@ -16,7 +16,7 @@ import { SECTION_IDS } from "@/constants/common"
 export const WorkExperience = () => {
 	return (
 		<section className='my-20 scroll-m-8' id={SECTION_IDS.work.value}>
-			<div className='flex flex-wrap lg:flex-nowrap mb-12 lg:mb-24'>
+			<div className='flex flex-wrap lg:flex-nowrap lg:mb-24'>
 				<div>
 					<OrangeHeader>
 						<h2>Work Experience</h2>
@@ -29,15 +29,15 @@ export const WorkExperience = () => {
 				<Link
 					href="/pdf/Arindam's Resume.pdf"
 					target='_blank'
-					className='cursor-pointer flex flex-col items-center ml-auto hover:text-accent h-fit'
+					className='cursor-pointer flex flex-col items-center ml-auto hover:text-accent h-fit mt-12 lg:mt-0'
 				>
 					<Image
 						src={downloadIcon}
 						alt='download'
 						priority
-						className='w-8 h-8 md:w-6 md:h-6'
+						className='w-8 h-8 hidden md:w-6 md:h-6 md:block'
 					/>
-					<span className='text-sm whitespace-nowrap hidden focus:text-accent md:block'>
+					<span className='text-sm whitespace-nowrap text-accent md:focus:text-accent'>
 						Download Résumé
 					</span>
 				</Link>
