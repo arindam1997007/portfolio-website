@@ -1,4 +1,4 @@
-Hi, welcome to my protfolio website, built using NextJS
+Hi, welcome to my protfolio website, built using NextJS 👋
 
 ## Getting Started
 
