@@ -1,0 +1,55 @@
+.css-pulse-loader {
+	--_gradient: no-repeat
+		radial-gradient(farthest-side, rgba(255, 255, 255, 0.5) 94%, #0000);
+	--_height: 8px;
+
+	width: 100%;
+	height: var(--_height);
+	background: var(--_gradient) 25% 0, var(--_gradient) 75% 0;
+	background-size: var(--_height) var(--_height);
+	position: relative;
+	animation: before-pulse 1s linear infinite;
+}
+
+.css-pulse-loader:before {
+	content: "";
+	position: absolute;
+	height: var(--_height);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.5);
+	inset: 0;
+	margin: auto;
+	animation: after-pulse 1s cubic-bezier(0.5, 300, 0.5, -300) infinite;
+}
+
+@media (min-width: 768px) {
+	.css-pulse-loader {
+		--_height: 12px;
+	}
+}
+
+@keyframes before-pulse {
+	0%,
+	24% {
+		background-position: 25% 0, 75% 0;
+	}
+	40% {
+		background-position: 25% 0, 85% 0;
+	}
+	50%,
+	72% {
+		background-position: 25% 0, 75% 0;
+	}
+	90% {
+		background-position: 15% 0, 75% 0;
+	}
+	100% {
+		background-position: 25% 0, 75% 0;
+	}
+}
+@keyframes after-pulse {
+	100% {
+		transform: translate(0.1px);
+	}
+}

@@ -1,0 +1,30 @@
+.css-primitive {
+	&[data-state="open"] {
+		& .css-minus {
+			animation: rotateMinus 0.5s linear;
+		}
+		& .css-plus {
+			display: none;
+		}
+	}
+	&[data-state="closed"] {
+		& .css-minus {
+			display: none;
+		}
+
+		& .css-plus {
+			animation: rotatePlus 0.5s linear;
+		}
+	}
+}
+
+@keyframes rotateMinus {
+	to {
+		transform: rotate(180deg);
+	}
+}
+@keyframes rotatePlus {
+	to {
+		transform: rotate(90deg);
+	}
+}
