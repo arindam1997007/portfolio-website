@@ -1,0 +1,19 @@
+:root {
+	scroll-behavior: smooth;
+}
+
+.css-background-gradient {
+	background-image: linear-gradient(
+		150deg,
+		hsl(209deg 100% 6%) 0%,
+		hsl(218deg 66% 13%) 12%,
+		hsl(242deg 38% 21%) 25%,
+		hsl(272deg 42% 25%) 39%,
+		hsl(301deg 48% 26%) 54%,
+		hsl(320deg 65% 32%) 70%,
+		hsl(330deg 81% 36%) 83%,
+		hsl(339deg 86% 41%) 90%,
+		hsl(353deg 71% 50%) 96%,
+		hsl(12deg 80% 50%) 100%
+	);
+}
