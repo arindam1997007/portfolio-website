@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { OrangeHeader } from "../ui/orangeHeader"
 import {
-	ArrowTopRightIcon,
 	CheckCircledIcon,
 	TwitterLogoIcon,
 	GitHubLogoIcon,
@@ -37,14 +36,11 @@ export const ContactMe = () => {
 	}
 
 	return (
-		<section className='mb-20' id={SECTION_IDS.contact.value}>
+		<section className='mb-10' id={SECTION_IDS.contact.value}>
 			<OrangeHeader>
-				<h2 className='flex lg:gap-2 justify-center lg:justify-normal mt-20'>
-					Contact Me{" "}
-					<ArrowTopRightIcon className='md:w-5 md:h-5 mb-20 lg:mb-10' />
-				</h2>
+				<h2>Contact Me</h2>
 			</OrangeHeader>
-			<div className="lg:bg-[url('/images/old_laptop_background.png')]  bg-no-repeat bg-center flex gap-4  text-secondary flex-col items-center lg:py-20 lg:flex-row">
+			<div className="lg:bg-[url('/images/old_laptop_background.png')]  bg-no-repeat bg-center flex gap-4  text-secondary flex-col items-center lg:mt-10 lg:py-10 lg:flex-row">
 				<div>
 					<p>Have a question or need assistance? Do reach out</p>
 					<ul className='font-semibold'>
