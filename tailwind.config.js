@@ -8,16 +8,23 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			backgroundImage: {
+				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+				"gradient-conic":
+					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+			},
 			colors: {
 				background: "#001121",
 				primary: "#B2A4E0",
 				secondary: "#ac9eb3",
 				accent: "#E64219",
 			},
-			backgroundImage: {
-				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-				"gradient-conic":
-					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+			fontSize: {
+				base: ["1rem", { lineHeight: "1.5" }],
+				lg: ["1.6rem", { lineHeight: "1.2" }],
+				xl: ["2.56rem", { lineHeight: "1" }],
+				body: "13px",
+				"body-md": "1rem",
 			},
 			keyframes: {
 				"accordion-down": {

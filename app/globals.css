@@ -7,3 +7,15 @@
 :-webkit-autofill:focus {
 	color-scheme: dark;
 }
+
+@layer base {
+	html {
+		@apply text-body;
+	}
+
+	@screen md {
+		html {
+			@apply text-body-md;
+		}
+	}
+}
