@@ -23,8 +23,8 @@ module.exports = {
 				base: ["1rem", { lineHeight: "1.5" }],
 				lg: ["1.6rem", { lineHeight: "1.2" }],
 				xl: ["2.56rem", { lineHeight: "1" }],
-				body: "13px",
-				"body-md": "1rem",
+				body: "14px",
+				"body-md": "16px",
 			},
 			keyframes: {
 				"accordion-down": {
