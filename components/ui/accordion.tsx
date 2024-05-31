@@ -8,8 +8,6 @@ import { cn } from "@/lib/utils"
 
 import "./accordion.css"
 
-import tcsLogo from "@/public/images/tcs-logo.svg"
-
 const Accordion = AccordionPrimitive.Root
 
 const AccordionItem = React.forwardRef<
@@ -32,7 +30,7 @@ const AccordionTrigger = React.forwardRef<
 		<AccordionPrimitive.Trigger
 			ref={ref}
 			className={cn(
-				"css-primitive flex flex-1 items-center justify-between py-4 text-sm font-medium ",
+				"css-primitive flex flex-1 items-center justify-between py-4 text-base font-medium ",
 				className
 			)}
 			{...props}
@@ -51,7 +49,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
 	<AccordionPrimitive.Content
 		ref={ref}
-		className='overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down'
+		className='overflow-hidden text-base data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down'
 		{...props}
 	>
 		<div className={cn("pb-4 pt-0", className)}>{children}</div>

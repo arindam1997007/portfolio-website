@@ -12,12 +12,12 @@ export const BlogItem = ({ blog }: { blog: BlogInterface }) => {
 				alt='Blog Image'
 				className='rounded-md opacity-80'
 			/>
-			<h3 className='text-xl font-semibold my-3 lg:text-3xl'>{blog.title}</h3>
-			<p className='text-secondary'>{blog.description}</p>
+			<h3 className='text-lg font-semibold my-3'>{blog.title}</h3>
+			<p className='text-secondary text-base'>{blog.description}</p>
 			<Link
 				href={blog.url}
 				target='_blank'
-				className='text-accent mt-4 inline-block'
+				className='text-accent inline-block lg:mt-4'
 			>
 				Read More..
 			</Link>

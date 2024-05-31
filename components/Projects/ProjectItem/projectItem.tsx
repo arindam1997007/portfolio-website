@@ -19,16 +19,6 @@ export const ProjectItem = ({
 
 	const getIndexBasedClassName = (type: string) => {
 		switch (type) {
-			case "order":
-				return index % 2 === 0 ? "lg:order-first" : "lg:order-2"
-			case "grid-cols":
-				return index % 2 === 0
-					? "lg:grid-cols-[minmax(40ch,_1fr)_auto]"
-					: "lg:grid-cols-[auto_minmax(40ch,_1fr)]"
-			case "translate":
-				return index % 2 === 0
-					? "lg:-translate-x-[15%]"
-					: "lg:translate-x-[15%]"
 			case "animateRotate":
 				if (index % 2 === 0) return isFlipped ? "180deg" : "360deg"
 				else return isFlipped ? "-180deg" : "-360deg"
@@ -38,18 +28,20 @@ export const ProjectItem = ({
 	}
 
 	return (
-		<div
-			className={cn(
-				"css-project-div grid grid-cols-1 place-items-center gap-4 lg:gap-0",
-				getIndexBasedClassName("grid-cols")
-			)}
-		>
-			<div
-				className={cn(
-					"css-card w-full aspect-[673/403] order-2",
-					getIndexBasedClassName("order")
-				)}
-			>
+		<div className={cn("css-project-div")}>
+			<div className={cn("text-lg font-bold text-center z-10 lg:text-left")}>
+				<Link
+					className='css-project--name text-accent'
+					href={project.href}
+					target='_blank'
+				>
+					{project.name}
+				</Link>
+				<p className='css-project--date text-base'>
+					{formatStartEndDate(project)}
+				</p>
+			</div>
+			<div className={cn("css-card w-full aspect-[673/403]")}>
 				<motion.div
 					className='css-card-container relative h-full'
 					animate={{ rotateY: getIndexBasedClassName("animateRotate") }}
@@ -85,7 +77,7 @@ export const ProjectItem = ({
 								return (
 									<span
 										key={skill}
-										className='border-accent py-1 text-accent tracking-wide font-medium text-[8px] min-[400px]:text-xs sm:text-sm'
+										className='border-accent py-1 text-accent tracking-wide font-medium text-[8px] min-[400px]:text-xs sm:text-base'
 									>
 										{skill}
 									</span>
@@ -94,24 +86,6 @@ export const ProjectItem = ({
 						</div>
 					</motion.div>
 				</motion.div>
-			</div>
-
-			<div
-				className={cn(
-					"relative translate-x-0 text-accent text-xl font-bold text-center z-10 md:text-4xl lg:text-left",
-					getIndexBasedClassName("translate")
-				)}
-			>
-				<Link
-					className='css-project--name underline decoration-2 underline-offset-4'
-					href={project.href}
-					target='_blank'
-				>
-					{project.name}
-				</Link>
-				<p className='css-project--date opacity-90 text-md md:text-2xl'>
-					{formatStartEndDate(project)}
-				</p>
 			</div>
 		</div>
 	)

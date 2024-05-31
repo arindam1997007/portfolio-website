@@ -46,7 +46,7 @@ export const Header = () => {
 					priority
 				/>
 				<motion.span
-					className='text-xl absolute bottom-0 right-[8%] origin-bottom-right md:text-2xl md:bottom-[9%]'
+					className='text-lg absolute bottom-0 right-[8%] origin-bottom-right md:bottom-[9%]'
 					animate={wavingAnimation}
 					whileHover={wavingAnimation}
 				>

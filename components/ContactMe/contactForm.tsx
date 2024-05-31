@@ -59,7 +59,7 @@ export const ContactForm = ({
 			/>
 			<button
 				className={cn(
-					"col-span-2 px-2 py-2 rounded-full border-2 cursor-pointer text-white/70 font-semibold w-16 aspect-square justify-self-center hover:text-white text-xs md:text-base md:w-24",
+					"col-span-2 px-2 py-2 rounded-full border-2 cursor-pointer text-white/70 font-semibold w-20 aspect-square justify-self-center hover:text-white text-base ",
 					renderButtonBorder()
 				)}
 				disabled={pending}

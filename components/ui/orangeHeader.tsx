@@ -10,7 +10,7 @@ export const OrangeHeader = ({
 	return (
 		<div
 			className={cn(
-				"text-2xl text-center font-bold tracking-wide flex flex-col basis-full text-accent md:text-5xl lg:basis-auto lg:text-left",
+				" text-accent text-center font-bold tracking-wide flex flex-col basis-full lg:basis-auto text-xl lg:text-left",
 				className
 			)}
 		>

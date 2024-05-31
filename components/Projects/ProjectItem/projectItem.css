@@ -1,12 +1,4 @@
 .css-project-div {
-	& .css-project--name {
-		text-shadow: 2px 1px hsl(11deg 73% 9% / 65%);
-	}
-
-	& .css-project--date {
-		text-shadow: 2px 1px 0px hsl(11deg 73% 9% / 45%);
-	}
-
 	& .css-card-container {
 		transition: transform 1s;
 		transform-style: preserve-3d;

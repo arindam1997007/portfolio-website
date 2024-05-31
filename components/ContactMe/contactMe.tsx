@@ -36,11 +36,11 @@ export const ContactMe = () => {
 	}
 
 	return (
-		<section className='mb-10' id={SECTION_IDS.contact.value}>
-			<OrangeHeader>
+		<section className='my-20' id={SECTION_IDS.contact.value}>
+			<OrangeHeader className='mb-10'>
 				<h2>Contact Me</h2>
 			</OrangeHeader>
-			<div className="lg:bg-[url('/images/old_laptop_background.png')]  bg-no-repeat bg-center flex gap-4  text-secondary flex-col items-center mt-10 lg:py-10 lg:flex-row">
+			<div className='flex gap-4 text-secondary flex-col items-center lg:flex-row'>
 				<div>
 					<p>
 						Have a question or need assistance? <br />

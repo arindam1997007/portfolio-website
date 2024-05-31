@@ -16,12 +16,12 @@ import { SECTION_IDS } from "@/constants/common"
 export const WorkExperience = () => {
 	return (
 		<section className='my-20 scroll-m-8' id={SECTION_IDS.work.value}>
-			<div className='flex flex-wrap lg:flex-nowrap lg:mb-24'>
+			<div className='flex flex-wrap lg:flex-nowrap lg:mb-10'>
 				<div>
 					<OrangeHeader>
 						<h2>Work Experience</h2>
 					</OrangeHeader>
-					<p className='text-lg tracking-[0.09em] mt-6 text-center md:text-2xl lg:text-left '>
+					<p className='text-lg tracking-[0.09em] mt-4 text-center lg:text-left '>
 						Delivering Innovation, Design Consistency, and Superior UI
 						Engineering Expertise.
 					</p>
@@ -37,7 +37,7 @@ export const WorkExperience = () => {
 						priority
 						className='w-8 h-8 hidden md:w-6 md:h-6 md:block'
 					/>
-					<span className='text-sm whitespace-nowrap text-accent md:focus:text-accent'>
+					<span className='whitespace-nowrap text-accent md:focus:text-accent'>
 						Download Résumé
 					</span>
 				</Link>
@@ -61,12 +61,12 @@ export const WorkExperience = () => {
 											height={50}
 											className='h-auto'
 										/>
-										<span className='whitespace-nowrap text-secondary ml-auto mr-3 relative top-[1px]'>
+										<span className='whitespace-nowrap text-secondary ml-auto mr-3 relative top-[1px] text-base'>
 											{formatStartEndDate(work)}
 										</span>
 									</AccordionTrigger>
 									<AccordionContent>
-										<p className='text-secondary pl-4 mb-3'>
+										<p className='text-secondary pl-4 mb-3 text-base'>
 											{work.role} @{" "}
 											<Link
 												href={work.href}
@@ -76,17 +76,17 @@ export const WorkExperience = () => {
 												{work.companyName}
 											</Link>
 										</p>
-										<ul className='list-disc  pl-4'>
+										<ul className='list-disc pl-4 text-base'>
 											{work.description.map((desc, index) => {
 												return <li key={index}>{desc}</li>
 											})}
 										</ul>
-										<div className='flex flex-wrap gap-2 mt-2 pl-4'>
+										<div className='flex flex-wrap gap-4 mt-2 pl-4'>
 											{work.skills.map(skill => {
 												return (
 													<span
 														key={skill}
-														className=' border-accent py-1 text-accent text-sm tracking-wide font-medium'
+														className='text-base border-accent py-1 text-accent tracking-wide font-medium'
 													>
 														{skill}
 													</span>
