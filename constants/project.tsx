@@ -31,7 +31,7 @@ export const ProjectList: ProjectInterface[] = [
 	},
 	{
 		id: 2,
-		name: "Infatuation",
+		name: "Bohemian",
 		startDate: new Date(2022, 5),
 		endDate: new Date(2022, 7),
 		description: [
