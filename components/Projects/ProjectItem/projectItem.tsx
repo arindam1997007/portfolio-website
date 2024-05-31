@@ -29,7 +29,7 @@ export const ProjectItem = ({
 
 	return (
 		<div className={cn("css-project-div")}>
-			<div className={cn("text-lg font-bold text-center z-10 lg:text-left")}>
+			<div className={cn("text-lg font-bold z-10")}>
 				<Link
 					className='css-project--name text-accent'
 					href={project.href}

@@ -1,7 +1,7 @@
 "use client"
 import { workExperiences } from "@/constants/work"
 import downloadIcon from "@/public/svg/download.svg"
-import { OrangeHeader } from "../ui/orangeHeader"
+import { FadedHeader } from "../ui/fadedHeader"
 import Image from "next/image"
 import {
 	Accordion,
@@ -15,21 +15,22 @@ import { SECTION_IDS } from "@/constants/common"
 
 export const WorkExperience = () => {
 	return (
-		<section className='my-20 scroll-m-8' id={SECTION_IDS.work.value}>
-			<div className='flex flex-wrap lg:flex-nowrap lg:mb-10'>
-				<div>
-					<OrangeHeader>
-						<h2>Work Experience</h2>
-					</OrangeHeader>
-					<p className='text-lg tracking-[0.09em] mt-4 text-center lg:text-left '>
-						Delivering Innovation, Design Consistency, and Superior UI
-						Engineering Expertise.
-					</p>
-				</div>
+		<section
+			className='my-20 scroll-m-8 text-center lg:text-left'
+			id={SECTION_IDS.work.value}
+		>
+			<FadedHeader
+				text='Work History'
+				className='text-[clamp(3rem,_14vw,_8.75rem)]'
+			/>
+			<div className='flex mb-0 gap-2 items-center flex-wrap lg:mb-10'>
+				<h3 className='text-lg font-semibold text-primary w-full lg:w-auto'>
+					From Nine to Five: Exploring My Career Landscape
+				</h3>
 				<Link
 					href="/pdf/Arindam's Resume.pdf"
 					target='_blank'
-					className='cursor-pointer flex flex-col items-center ml-auto hover:text-accent h-fit mt-12 lg:mt-0'
+					className='cursor-pointer flex flex-col items-center ml-auto h-fit hover:text-accent mt-10 lg:mt-0'
 				>
 					<Image
 						src={downloadIcon}
@@ -43,7 +44,7 @@ export const WorkExperience = () => {
 				</Link>
 			</div>
 			<div className='flex'>
-				<div className='w-full'>
+				<div className='w-full text-left'>
 					<Accordion
 						type='single'
 						collapsible

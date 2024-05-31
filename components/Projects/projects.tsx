@@ -3,16 +3,21 @@ import { ProjectList } from "@/constants/project"
 import { ProjectItem } from "./ProjectItem/projectItem"
 import React from "react"
 import { ArrowSVG } from "../SVG/arrow"
-import { OrangeHeader } from "../ui/orangeHeader"
+import { FadedHeader } from "../ui/fadedHeader"
 import { SECTION_IDS } from "@/constants/common"
 
 export const Projects = () => {
 	return (
-		<section id={SECTION_IDS.project.value} className='scroll-m-8 my-20'>
-			<OrangeHeader className='mb-10'>
-				<h2>Projects</h2>
-			</OrangeHeader>
-			<div className=' mt-5'>
+		<section
+			id={SECTION_IDS.project.value}
+			className='scroll-m-8 my-20 text-center lg:text-left'
+		>
+			<FadedHeader text={"Projects"} />
+
+			<div>
+				<h3 className='text-lg font-semibold text-primary mb-10'>
+					Collaborations with Client
+				</h3>
 				{ProjectList.map((project, index) => {
 					return (
 						<React.Fragment key={project.id}>

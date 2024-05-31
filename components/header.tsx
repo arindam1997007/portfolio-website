@@ -2,7 +2,6 @@
 import Image from "next/image"
 import profilePic from "@/public/images/profilePic.png"
 import { motion } from "framer-motion"
-import { OrangeHeader } from "./ui/orangeHeader"
 import { SECTION_IDS } from "@/constants/common"
 
 const wavingAnimation = {
@@ -13,10 +12,10 @@ const wavingAnimation = {
 export const Header = () => {
 	return (
 		<header
-			className='flex relative gap-3 justify-between  items-center flex-wrap-reverse lg:flex-nowrap scroll-m-80'
+			className='flex relative gap-3 justify-between  items-center flex-wrap-reverse lg:flex-nowrap scroll-m-80 text-center lg:text-left'
 			id={SECTION_IDS.home.value}
 		>
-			<OrangeHeader>
+			<div className='text-accent font-bold tracking-wide flex flex-col basis-full lg:basis-auto text-xl'>
 				<motion.h1
 					initial={{ y: -300 }}
 					animate={{ y: 0 }}
@@ -32,7 +31,7 @@ export const Header = () => {
 				>
 					Coding one pixel at a time.
 				</motion.h2>
-			</OrangeHeader>
+			</div>
 			<motion.div
 				className='relative mx-auto'
 				initial={{ scale: 0 }}
