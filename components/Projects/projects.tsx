@@ -12,7 +12,7 @@ export const Projects = () => {
 			<OrangeHeader className='mb-10'>
 				<h2>Projects</h2>
 			</OrangeHeader>
-			<div className=' mt-5 md:'>
+			<div className=' mt-5'>
 				{ProjectList.map((project, index) => {
 					return (
 						<React.Fragment key={project.id}>
