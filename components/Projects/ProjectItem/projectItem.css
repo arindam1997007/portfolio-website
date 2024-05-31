@@ -9,6 +9,10 @@
 		backface-visibility: hidden;
 	}
 
+	& .css-card-front {
+		transform: rotateX(0deg);
+	}
+
 	& .css-card-back {
 		transform: rotateY(180deg);
 	}
