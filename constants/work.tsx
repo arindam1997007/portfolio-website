@@ -30,7 +30,7 @@ export const workExperiences: WorkExperienceInterface[] = [
 			"Replaced useContext with react-redux, optimizing rendering efficiency by reducing unnecessary re-renders by approximately 50%.",
 		],
 		startDate: new Date(2023, 10),
-		endDate: null,
+		endDate: new Date(2024, 7),
 		skills: [
 			"ReactJS",
 			"Redux.js",
